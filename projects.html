@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by charlesx0101 - Open-source scripts, automation tools, and CLI projects." />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Projects | charlesx0101</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      background-color: #080702;
+      color: #9b9b9d;
+      font-family: monospace;
+      font-size: 16px;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .intro-section {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .intro-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .intro-logo-column {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2em;
+      margin-top: 2em;
+    }
+
+    .logo {
+      max-width: 200px;
+      height: auto;
+    }
+
+    .logo-link img {
+      display: block;
+      border: none;
+    }
+
+    a img {
+      outline: none;
+    }
+
+    a:focus img,
+    a:active img {
+      outline: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em 1em;
+      font-size: 0.85em;
+      color: #666;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="top-nav right-align">
+      <a href="/index.html">[CharlesX0101]</a>
+      <a href="/about.html">[/About]</a>
+      <a href="/labs.html">[/Labs]</a>
+      <a href="/projects.html">[/Projects]</a>
+      <a href="/contact.html">[/Contact]</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="intro-section">
+      <div class="intro-text">
+        <h1>&lt;/Projects&gt;<span class="cursor">█</span></h1>
+        <p>This section presents a list of GitHub projects designed to help you learn, automate tasks, and tackle real problems. These tools showcase continued exploration and hands-on problem-solving in IT and cybersecurity.</p>
+
+        <div class="project">
+          <h3><a href="https://github.com/charlesX0101/vpn-connect">[VPN-Connect]</a></h3>
+          <p>Command-line utility to manage .ovpn connections for platforms like HackTheBox and TryHackMe, including IP verification and connection status checks.</p>
+        </div>
+
+        <div class="project">
+          <h3><a href="https://github.com/charlesX0101/n-wrap">[N-Wrap]</a></h3>
+          <p>An easy to use Bash wrapper for nmap that helps beginners and IT professionals run essential network scans through a guided CLI menu.</p>
+        </div>
+
+        <div class="project">
+          <h3><a href="https://github.com/charlesX0101/system-recon-dashboard">[SysRecon]</a></h3>
+          <p>Bash-based host scanner for auditing local system configs fast.</p>
+        </div>
+      </div>
+
+      <div class="intro-logo-column">
+        <a href="/index.html" class="logo-link">
+          <img src="assets/logo.png" alt="charlesx0101 logo" class="logo" />
+        </a>
+        <a href="https://github.com/charlesX0101" target="_blank" class="logo-link">
+          <img src="assets/githublogo.png" alt="GitHub logo" class="logo github-logo" />
+        </a>
+      </div>
+    </div>
+    <div style="height: 4em;"></div>
+  </main>
+
+  <footer>
+    Built with HTML & CSS · Inspired by the command line · ©2025 by charlesx0101 · All rights reserved.
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Labs by charlesx0101 - Secure infrastructure, systems setup, and hands-on experimentation." />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Labs | charlesx0101</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      background-color: #080702;
+      color: #9b9b9d;
+      font-family: monospace;
+      font-size: 16px;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .intro-section {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .intro-text {
+      flex: 1;
+      min-width: 300px;
+    }
+    .intro-logo-column {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2em;
+      margin-top: 2em;
+    }
+    .logo {
+      max-width: 200px;
+      height: auto;
+    }
+    .logo-link img {
+      display: block;
+      border: none;
+    }
+    a img {
+      outline: none;
+    }
+    a:focus img, a:active img {
+      outline: none;
+    }
+    footer {
+      text-align: center;
+      padding: 2em 1em;
+      font-size: 0.85em;
+      color: #666;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="top-nav right-align">
+      <a href="/index.html">[CharlesX0101]</a>
+      <a href="/about.html">[/About]</a>
+      <a href="/labs.html">[/Labs]</a>
+      <a href="/projects.html">[/Projects]</a>
+      <a href="/contact.html">[/Contact]</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="intro-section">
+      <div class="intro-text">
+        <h1>&lt;/Labs&gt;<span class="cursor">█</span></h1>
+        <p>
+          This section documents practical labs built for hands-on skill development and technical exploration. Each project below was constructed to test tools, deploy infrastructure, or harden environments — not in theory, but in practice.
+        </p>
+
+        <div class="project">
+          <h3><a href="https://github.com/charlesX0101/homelab-build">[Homelab-Build]</a></h3>
+          <p>Docs + design for a secure, enterprise-style segmented network at home.</p>
+        </div>
+
+        <div class="project">
+          <h3><a href="https://github.com/charlesX0101/ubuntu-secure-server-setup">[Ubuntu-Secure-Server-Setup]</a></h3>
+          <p>Secure Ubuntu Server LTS setup with SSH hardening, UFW firewall, and QEMU-based deployment.</p>
+        </div>
+
+        <div class="project">
+          <h3><a href="https://github.com/charlesX0101/windows-server-ad-lab">[Windows-Server-AD-Lab]</a></h3>
+          <p>QEMU-based Windows Server 2022 lab with AD DS, user roles and system hardening via PowerShell.</p>
+        </div>
+      </div>
+
+      <div class="intro-logo-column">
+        <a href="/index.html" class="logo-link">
+          <img src="assets/logo.png" alt="charlesx0101 logo" class="logo" />
+        </a>
+        <a href="https://github.com/charlesX0101" target="_blank" class="logo-link">
+          <img src="assets/githublogo.png" alt="GitHub logo" class="logo github-logo" />
+
+        </a>
+      </div>
+    </div>
+    <div style="height: 4em;"></div>
+  </main>
+
+  <footer>
+    Built with HTML & CSS · Inspired by the command line · ©2025 by charlesx0101 · All rights reserved.
+  </footer>
+</body>
+</html>

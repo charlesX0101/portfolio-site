@@ -1,0 +1,223 @@
+/* ====================================================
+   Variables
+==================================================== */
+:root {
+  --bg-color: #080702;
+  --text-color: #9b9b9d;
+  --accent-teal: #0f5e5b;
+  --accent-green: #39ff14;
+  --accent-purple: #a855f7;
+  --font-mono: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+/* ====================================================
+   Base Styles
+==================================================== */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-mono);
+  line-height: 1.6;
+}
+
+/* ====================================================
+   Layout Containers
+==================================================== */
+main {
+  padding: 2em;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+header {
+  background: var(--bg-color);
+  padding: 1em 2em;
+  border-bottom: 1px solid #333;
+}
+
+/* ====================================================
+   Navigation
+==================================================== */
+.top-nav {
+  display: flex;
+  gap: 1.5em;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: var(--accent-purple);
+  font-weight: bold;
+}
+
+.top-nav a:hover {
+  color: var(--accent-teal);
+}
+
+/* ====================================================
+   Intro Section
+==================================================== */
+.intro-section {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.intro-text {
+  flex: 1 1 60%;
+  text-align: left;
+}
+
+.intro-logo {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: -1em;
+}
+
+.intro-logo-column {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+/* ====================================================
+   Logo Styling
+==================================================== */
+.logo {
+  max-height: 350px;
+  width: auto;
+  background-color: transparent;
+}
+
+.logo.github-logo {
+  max-height: 150px;
+}
+
+/* ====================================================
+   Projects Section
+==================================================== */
+.project-section {
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin-top: 2em;
+}
+
+.project-section h2 {
+  font-size: 1.1em;
+  color: var(--accent-green);
+  margin-bottom: 1em;
+}
+
+.project {
+  margin-bottom: 1.2em;
+}
+
+.project h3 {
+  margin: 0 0 0.3em;
+  font-size: 1em;
+}
+
+.project p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.project a {
+  color: var(--accent-teal);
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* ====================================================
+   Footer
+==================================================== */
+footer {
+  text-align: center;
+  padding: 2em 1em;
+  font-size: 0.85em;
+  color: #666;
+  margin-top: auto;
+}
+
+/* ====================================================
+   Cursor Animation
+==================================================== */
+.cursor {
+  display: inline-block;
+  margin-left: 5px;
+  color: var(--accent-teal);
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ====================================================
+   Contact Page Styles
+==================================================== */
+.subhead {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--accent-teal);
+  margin-top: 1.5em;
+}
+
+.contact-link {
+  color: var(--accent-teal);
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* ====================================================
+   Responsive Design
+==================================================== */
+@media (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-text,
+  .intro-logo {
+    text-align: center;
+  }
+
+  .intro-logo {
+    padding-top: 1em;
+    margin-top: 0;
+  }
+
+  .logo {
+    max-height: 270px;
+  }
+
+  .logo.github-logo {
+    max-height: 200px;
+  }
+}
+
