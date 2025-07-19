@@ -77,6 +77,13 @@ header {
   text-align: left;
 }
 
+.intro-text h1 {
+  font-size: 1.6em;
+  word-break: break-word;
+  white-space: normal;
+  line-height: 1.2;
+}
+
 .intro-logo {
   flex: 1 1 35%;
   display: flex;
@@ -106,6 +113,15 @@ header {
 
 .logo.github-logo {
   max-height: 150px;
+}
+
+/* Logo size overrides for subpages like Contact, Labs, Projects */
+body.subpage .logo {
+  max-height: 210px;
+}
+
+body.subpage .logo.github-logo {
+  max-height: 120px;
 }
 
 /* ====================================================
@@ -207,18 +223,24 @@ footer {
   }
 
   .intro-text {
-    flex: 1 1 60%;
+    flex: 1 1 100%;
     text-align: left;
     max-width: 100%;
   }
 
+  .intro-text h1 {
+    font-size: 1.2em;
+    word-break: break-word;
+    white-space: normal;
+    line-height: 1.2;
+  }
+
   .intro-logo-column {
-    flex: 1 1 35%;
-    align-items: flex-end;
-    justify-content: flex-start;
+    flex: 1 1 100%;
+    align-items: center;
+    justify-content: center;
     gap: 1em;
-    margin-top: 0;
-    padding-top: 0;
+    margin-top: 1em;
   }
 
   .logo {
