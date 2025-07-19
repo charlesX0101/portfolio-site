@@ -200,24 +200,48 @@ footer {
   .intro-section {
     flex-direction: column;
     align-items: center;
-  }
-
-  .intro-text,
-  .intro-logo {
+    padding: 1.5em 1em;
+    gap: 2em;
     text-align: center;
   }
 
-  .intro-logo {
+  .intro-text {
+    width: 100%;
+    max-width: 90vw;
+  }
+
+  .intro-logo,
+  .intro-logo-column {
     padding-top: 1em;
     margin-top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5em;
   }
 
   .logo {
     max-height: 270px;
+    width: auto;
   }
 
   .logo.github-logo {
     max-height: 200px;
+  }
+
+  .top-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em 0;
+  }
+
+  footer {
+    font-size: 0.75em;
+    padding: 1em;
+    margin-top: 2em;
   }
 }
 
