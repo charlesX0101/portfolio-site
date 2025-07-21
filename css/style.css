@@ -68,38 +68,25 @@ header {
   flex-direction: row;
   gap: 2em;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: flex-start; /* Make sure items align at the top */
   justify-content: space-between;
 }
 
 .intro-text {
   flex: 1 1 60%;
   text-align: left;
-}
-
-.intro-text h1 {
-  font-size: 1.6em;
-  word-break: break-word;
-  white-space: normal;
-  line-height: 1.2;
-}
-
-.intro-logo {
-  flex: 1 1 35%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: -1em;
+  min-width: 300px;
 }
 
 .intro-logo-column {
-  flex: 0 0 auto;
+  flex: 1 1 35%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2em;
   margin-top: 2em;
+  align-self: flex-start; /* Force top alignment even if the text grows */
 }
 
 /* ====================================================
