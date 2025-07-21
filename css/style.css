@@ -67,7 +67,7 @@ header {
   display: flex;
   flex-direction: row;
   gap: 2em;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Desktop: keep horizontal layout */
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -75,42 +75,25 @@ header {
 .intro-text {
   flex: 1 1 60%;
   text-align: left;
-  min-width: 300px;
+  min-width: 0;
 }
 
 .intro-logo-column {
-  flex: 1 1 35%;
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 2em;
-  margin-top: 2em;
+  margin-top: 0;
   align-self: flex-start;
-}
-
-.intro-text {
-  flex: 1 1 60%;
-  text-align: left;
-  min-width: 300px;
-}
-
-.intro-logo-column {
-  flex: 1 1 35%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2em;
-  margin-top: 2em;
-  align-self: flex-start; /* Force top alignment even if the text grows */
 }
 
 /* ====================================================
    Logo Styling
 ==================================================== */
 .logo {
-  max-height: 350px;
+  max-height: 210px;
   width: auto;
   background-color: transparent;
 }
@@ -119,14 +102,11 @@ header {
   max-height: 150px;
 }
 
-/* Logo size overrides for subpages like Contact, Labs, Projects */
-body.subpage .logo {
-  max-height: 210px;
+/* Only used on the homepage (index.html) */
+.home-logo {
+  max-height: 350px;
 }
 
-body.subpage .logo.github-logo {
-  max-height: 120px;
-}
 
 /* ====================================================
    Projects Section
@@ -219,56 +199,26 @@ footer {
 @media (max-width: 768px) {
   .intro-section {
     flex-direction: column;
-    gap: 1.5em;
-    padding: 1.5em 1em;
+    align-items: center;
+    flex-wrap: wrap; /* Mobile: allow stacking */
   }
 
-  .intro-text {
-    flex: 1 1 auto;
-    text-align: left;
-    max-width: 100%;
-  }
-
-  .intro-text p {
-    font-size: 0.7em;
-    line-height: 1.3;
-    word-break: normal;
-    overflow-wrap: normal;
-    white-space: normal;
-    max-width: 100%;
+  .intro-text,
+  .intro-logo-column {
+    width: 100%;
+    text-align: center;
   }
 
   .intro-logo-column {
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    margin-top: 1em;
-    padding-top: 0;
+    margin-top: 2em;
   }
 
   .logo {
-    max-height: 160px;
-    width: auto;
+    max-height: 270px;
   }
 
   .logo.github-logo {
-    max-height: 100px;
-  }
-
-  .top-nav {
-    justify-content: center;
-    gap: 1em;
-    padding: 1em 0;
-  }
-
-  footer {
-    font-size: 0.75em;
-    padding: 1em;
-    margin-top: 2em;
+    max-height: 200px;
   }
 }
-
-
-
 
