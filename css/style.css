@@ -200,16 +200,17 @@ footer {
   .intro-section {
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap; /* Mobile: allow stacking */
+    flex-wrap: wrap;
   }
 
-  .intro-text,
+  .intro-text {
+    width: 100%;
+    text-align: left; /* <-- Fixes the issue */
+  }
+
   .intro-logo-column {
     width: 100%;
     text-align: center;
-  }
-
-  .intro-logo-column {
     margin-top: 2em;
   }
 
@@ -221,4 +222,5 @@ footer {
     max-height: 200px;
   }
 }
+
 
