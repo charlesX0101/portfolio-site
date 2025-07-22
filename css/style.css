@@ -217,40 +217,40 @@ footer {
 ==================================================== */
 @media (max-width: 768px) {
   .intro-section {
-    flex-direction: row; /* Stay horizontal like desktop */
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1em;
-    flex-wrap: nowrap;
+    flex-direction: column; /* Change this to stack text and logo */
+    align-items: center;
+    gap: 2em;
+    padding: 2em 1em;
   }
 
   .intro-text {
-    flex: 1 1 60%;
-    font-size: 0.95em; /* Slightly smaller text for small screens */
+    flex: none;
+    width: 100%;
+    font-size: 0.95em;
+    text-align: center;
   }
 
   .intro-logo-column {
-    flex: 0 0 auto;
+    flex: none;
     align-items: center;
-    justify-content: flex-start;
-    gap: 1em;
+    justify-content: center;
+    width: 100%;
     margin-top: 0;
   }
 
-  .logo {
-    max-height: 140px;
-    width: auto;
-  }
-
-  .logo.github-logo {
-    max-height: 100px;
-    width: auto;
+  .logo,
+  .logo.github-logo,
+  .home-logo {
+    max-width: 60%;
+    height: auto;
+    max-height: 180px;
   }
 
   .logo-text {
-    text-align: center;
     font-size: 0.8em;
+    text-align: center;
   }
 }
+
 
 
