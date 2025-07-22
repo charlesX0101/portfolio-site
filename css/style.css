@@ -11,11 +11,30 @@
 }
 
 /* ====================================================
+   Layout Fix: Full Height for Sticky Footer
+==================================================== */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 1em;
+}
+
+/* ====================================================
    Base Styles
 ==================================================== */
 body {
-  margin: 0;
-  padding: 0;
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--font-mono);
@@ -25,15 +44,6 @@ body {
 /* ====================================================
    Layout Containers
 ==================================================== */
-main {
-  padding: 2em;
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
 header {
   background: var(--bg-color);
   padding: 1em 2em;
@@ -70,6 +80,9 @@ header {
   flex-wrap: nowrap; /* Desktop: keep horizontal layout */
   align-items: flex-start;
   justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2em 1em;
 }
 
 .intro-text {
@@ -106,7 +119,6 @@ header {
 .home-logo {
   max-height: 350px;
 }
-
 
 /* ====================================================
    Projects Section
@@ -150,11 +162,18 @@ header {
    Footer
 ==================================================== */
 footer {
-  text-align: center;
   padding: 2em 1em;
   font-size: 0.85em;
   color: #666;
   margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  max-width: 1100px;
+  width: 100%;
+  text-align: left;
 }
 
 /* ====================================================
@@ -206,6 +225,7 @@ footer {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    padding: 1.5em 1em;
   }
 
   .intro-text {
@@ -227,5 +247,4 @@ footer {
     max-height: 200px;
   }
 }
-
 
