@@ -216,35 +216,41 @@ footer {
    Responsive Design
 ==================================================== */
 @media (max-width: 768px) {
-  .top-nav {
-    justify-content: center;
-    text-align: center;
-  }
-
   .intro-section {
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 1.5em 1em;
+    flex-direction: row; /* Stay horizontal like desktop */
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: nowrap;
   }
 
   .intro-text {
-    width: 100%;
-    text-align: left;
+    flex: 1 1 60%;
+    font-size: 0.95em; /* Slightly smaller text for small screens */
   }
 
   .intro-logo-column {
-    width: 100%;
-    text-align: center;
-    margin-top: 2em;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+    margin-top: 0;
   }
 
   .logo {
-    max-height: 270px;
+    max-height: 140px;
+    width: auto;
   }
 
   .logo.github-logo {
-    max-height: 200px;
+    max-height: 100px;
+    width: auto;
+  }
+
+  .logo-text {
+    text-align: center;
+    font-size: 0.8em;
   }
 }
+
 
